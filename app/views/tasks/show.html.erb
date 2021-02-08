@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="show-title">
+    <h1>
+      <%= @task.title %>
+    </h1>
+    <div class="edit-button">
+      <%= link_to edit_task_path(@task) do %>
+        <!-- <span> -->
+          <!-- <i class="fas fa-pen"></i> -->
+          <i class="fas fa-pencil-alt"></i>
+          Edit this Task
+        <!-- </span> -->
+      <% end %>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="details">
+      <%= @task.details %>
+    </div>
+    <p style="margin: 1rem auto;">
+      <% if @task.completed == true %>
+        <i class="far fa-check-square"></i>
+        This Task is completed
+      <% else %>
+        <i class="far fa-square"></i>
+        This Task is not completed
+      <% end %>
+    </p>
+  </div>
+
+  <%= link_to tasks_path do %>
+    <span>
+      <i class="fas fa-undo"></i>
+      Back to the list
+    </span>
+  <% end %>
+</div>
+

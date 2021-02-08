@@ -1,0 +1,39 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.show-title {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-button {
+  border: 1px solid lightgrey;
+  padding: 2px 5px;
+  border-radius: 4px;
+  // background-color: lightgrey;
+  a{
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.details {
+  border: 1px solid lightgrey;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  // margin: 2rem auto;
+}
+
+.far {
+  margin-right: 5px;
+}
+
+.content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+}
